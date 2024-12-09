@@ -1,0 +1,63 @@
+body {
+    color: #FFEECB;
+    background-color:#006C61;/*나중에 폰트 넣을거면 전체적으로 넣어도 될 것 같아서 우선 만들어 놓음*/
+}
+/* 사이드바 스타일 변경 */
+#mySidebar {background-color: #ffeecb;}
+#closeBtn {color: #006c61;}
+#menuTitle {color: #006c61;}
+.menuItem {color: #006c61; border-bottom: 2px solid #006c61;}
+.menuItem:hover {background-color: #d3d3a9;}
+header {color: #ffeecb;}
+footer {color: #ffeecb;}
+
+/*개별설정*/
+section {
+    margin: 90px 0px 120px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {width: 800px;}
+}
+.intro1 {
+    font-family: "Lemon", serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.intro2 {
+    font-family: "Jua", serif;
+    margin-top: 20px;
+    font-size: 40px;
+}
+button {
+    font-family: "Jua", serif;
+    font-size: 40px;
+    background-color: #FFEECB;;
+    margin-top: 50px ;
+    border-radius: 50px;
+    border: none;
+    width: 500px;
+    height: 80px;
+}
+
+/*모바일용*/
+@media (max-width:600px) {
+    section {
+        img {width: 300px;}
+    }
+    .intro1 {
+        margin-top: 35px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .intro2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    button {
+        font-size: 30px;
+        width: 350px;
+        height: 55px;
+        margin-bottom: 120px;
+    }
+}

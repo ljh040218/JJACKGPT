@@ -1,0 +1,59 @@
+/*전체 설정*/
+body {
+    font-family: "Lemon", serif;
+    background-color: #006C61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*개별 설정*/
+.logo {
+    img{width: 30%; margin: 10px 0px 10px 0px;}
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.welcom {
+    font-size: 130px;  
+    color: #ffffff;
+}
+.loading-bar {
+    width: 1000px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 9999px;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.loading-progress {
+    height: 100%;
+    background-color: #FFEECB;
+    border-radius: 9999px;
+    animation: loading 8s linear forwards; /* 10 seconds animation duration */
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/*모바일용*/
+@media (max-width:600px) {
+    .logo {margin-top: 150px;}
+    .logo img{
+        padding-top: 100px;
+        width: 250px;
+        margin: 10px 0px 10px 0px;
+    }
+    .welcom {
+        font-size: 50px;  
+    }
+    .loading-bar {
+        margin-top: 100px;
+        width: 300px;
+        height: 35px;
+    }
+}

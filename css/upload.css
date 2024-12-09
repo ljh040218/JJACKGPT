@@ -1,0 +1,82 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 {
+    margin: 3% 0% 3% 0%;
+    width: 1200px;
+    height: 800px;  
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;  /* 내용이 밖으로 넘치지 않도록 설정함 -> 이거 설정 해제하면 사진 첨부했을때 밖으로 밀림 */
+    padding: 20px;
+}
+
+.upload-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
+#preview {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preview img {
+    width: 100%;
+    object-fit: contain;
+}
+.upload-label {
+    font-size: 30px;
+    /* font-family: "Jua", serif; 폰트 적용하니까 디자인적으로 좋지 않아 주석처리*/
+    cursor: pointer;
+    text-align: center;
+}
+
+.upload-label i {
+    font-size: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.section3 button {
+    font-family: "Jua", serif;
+    font-size: 40px;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    background-color: #006C61;
+    margin-bottom: 5%;
+    width: 800px;
+    height: 80px;
+}
+
+
+/*모바일용*/
+@media (max-width:600px) {
+    .section2 {
+        margin: 150px 0px 120px 0px;
+        width: 320px;
+        height: 300px;  
+    }
+    .upload-label {font-size: 18px;}
+    .upload-label i {
+        margin-top: 90px;
+        font-size: 30px;
+    }
+    .section3 button {
+        font-size: 20px;
+        margin-bottom: 180px;
+        width: 300px;
+        height: 45px;
+    }
+}

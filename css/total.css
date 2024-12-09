@@ -1,0 +1,56 @@
+/*개별 설정 부분*/
+.section1 {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+.next {
+    margin: 1.5%;
+    font-family: "Jua", serif;
+}
+/*링크 설정 */
+a {
+    text-decoration: none;
+    font-size: 40px;
+}
+a:link {
+    color: #006C61;
+}
+/* a:visited {
+
+} 이미 방문한 링크 색깔 변경하고 싶으면 변경할 것 이 부분 바꾸면 sidebar 색도 변함 주의*/
+
+button {
+    background-color: #006C61;
+    width: 28%; 
+    margin: 2%;
+    height: 400px; /*데스크탑 기준 버튼 크기*/
+    border-radius: 50px; 
+    border: none;
+    font-size: 60px;
+    color: #FFEECB;
+    font-weight: bold;
+    font-family: "Jua", serif;
+    letter-spacing: 5px; /*글자 사이 간격 조정*/
+}
+ /*모바일용*/
+ @media (max-width:600px) {
+    .section1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; /* 버튼을 중앙 정렬 */
+    }
+    button {
+        width: 45%; /* 모바일에서 버튼 너비를 줄여 2열 배치 */
+        height: 230px; /* 모바일에서 버튼 높이 조정 */
+        font-size: 25px;
+    }
+    a {
+        font-size: 20px;
+    }
+ }

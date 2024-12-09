@@ -1,0 +1,75 @@
+/* 사이드바 스타일 */
+#mySidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #006C61;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Jua", serif;
+ }
+ 
+ #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 72px; 
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ffeecb;
+    cursor: pointer;
+ }
+ 
+ #menuTitle {
+    font-family: "Lemon", serif;
+    padding: 32px; 
+    text-decoration: none;
+    color: #ffeecb;
+    display: block;
+    transition: 0.3s;
+    font-size: 48px; 
+ }
+ 
+ .menuItem {
+    padding: 40px; 
+    text-decoration: none;
+    color: #ffeecb;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 2px solid #ffeecb;
+    font-size: 32px; 
+ }
+ 
+ .menuItem:hover {
+    background-color: #3d866b;
+ }
+ 
+ .xi-bars {
+    cursor: pointer;
+ }
+ 
+ .sidebar-width {
+    width: 500px;
+ }
+ 
+ /*모바일용*/
+ @media (max-width:600px) {
+    #closeBtn {
+        font-size: 36px; 
+    }
+    #menuTitle {
+        padding: 16px;
+        font-size: x-large;
+    }
+    .menuItem {
+        padding: 25px;
+        font-size: 16px;
+    }
+    .sidebar-width {
+        width: 250px;
+    }
+ }

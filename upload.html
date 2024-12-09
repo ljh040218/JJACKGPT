@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> <!--아이콘용 link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Jua&display=swap" rel="stylesheet"> <!--구글 Lemon, Jua 폰트 사용-->
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>ZZACK GPT</title>
+</head>
+<body>
+    <div id="mySidebar">
+        <div id="closeBtn" onclick="closeNav()">&times;</div>
+        <a href="#" id="menuTitle">Menu</a>
+        <a href="home.html" class="menuItem">홈페이지</a>
+        <a href="" class="menuItem">프로필</a> <!--구현X-->
+        <a href="map.html" class="menuItem">지역별 조류</a>
+        <a href="upload.html" class="menuItem">새 찾기</a> 
+        <a href="search.html" class="menuItem">새 검색</a>
+        <a href="total.html" class="menuItem">우리나라 새 모아보기</a>
+    </div>
+    <header>
+        <i class="xi-bars" onclick="openNav()"></i>
+        <div class="header1">ZZACK GPT</div>
+        <i class="xi-home"onclick="location.href='home.html'"></i>
+    </header>
+    <section>
+        <!-- <div class="section1">새 검색</div>  head로 넣었더니 더 조잡해져서 주석처리-->
+        <div class="section2">
+            <div class="upload-container" id="drop-zone">
+                <input type="file" accept="image/*" id="fileInput" hidden>
+                <label for="fileInput" class="upload-label">
+                    <i class="xi-camera"></i>
+                    <p>궁금한 새의 사진을 첨부하거나 사진을 끌어다 놓으세요</p>
+                </label>
+                <div id="preview"></div>
+            </div>
+        </div>
+        <div class="section3">
+            <!--아마 API 연결해서 검색하는 문이 들어갈 자리...?-->
+            <button onclick="location.href='upload.html'">검색 시작</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer1">© 2024 ZZACK GPT</div>
+        <div class="footer2">Created for Database Project</div>
+        <div class="footer3">Creation Period: September - December 2024</div>
+        <div class="footer4">Advisor : Jong-gu Kang</div>
+    </footer>
+    <script src="js/sidebar.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>

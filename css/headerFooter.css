@@ -1,0 +1,40 @@
+/*헤더 설정*/
+header {
+    font-family: "Lemon", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 90px;
+    font-weight: bold;
+    color: #006C61;
+    text-align: center;
+}
+.xi-bars {
+    font-size: 100px;
+    margin-left: 2%;
+}
+.xi-home-o {
+    font-size: 100px;
+    margin-right: 2%;
+}
+
+/*footer 설정*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: #006C61;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+/*모바일용*/
+@media (max-width:600px) {
+    header {font-size: 35px;}
+    .xi-bars {font-size: 55px;}
+    .xi-home {font-size: 55px;}
+    .xi-profile-o {font-size: 55px;}
+    .header1 img {width: 10px;} 
+    footer {font-size: 8px;}
+}
